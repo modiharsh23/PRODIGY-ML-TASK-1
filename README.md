@@ -65,4 +65,4 @@ The R² score indicates that the model can explain approximately **63%** of the 
 - `pandas`
 - `matplotlib`
 - `seaborn`
-- `scikit-learn`
+- `scikit-learn`git 
