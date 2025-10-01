@@ -46,11 +46,11 @@ The R² score indicates that the model can explain approximately **63%** of the 
 ## **How to Run**
 1. Clone this repository to your local machine:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/modiharsh23/PRODIGY-ML-TASK-1
 
 2. Navigate to the project directory:
    ```Bash
-    cd <project-directory>
+    cd https://github.com/modiharsh23/PRODIGY-ML-TASK-1
 
 3. Install the required libraries:
    ```Bash
