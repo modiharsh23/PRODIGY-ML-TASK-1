@@ -1,0 +1,30 @@
+Key Findings from the Analysis
+Initial Inspection:
+
+The data loaded correctly.
+
+The .info() command shows that there are no missing values in our selected columns (GrLivArea, BedroomAbvGr, FullBath, SalePrice), which is great! This means we don't need to handle missing data for this specific task.
+
+SalePrice Distribution:
+
+The histogram of SalePrice is right-skewed, meaning there are more houses at the lower end of the price range and a few very expensive houses that form a "tail" to the right.
+
+This is very common for price data. For more advanced models, we might apply a log transformation to make the distribution more normal, but for a basic linear regression, we can proceed as is.
+
+Relationships with SalePrice:
+
+GrLivArea vs. SalePrice: The scatter plot shows a clear and strong positive linear relationship. As the square footage (GrLivArea) increases, the SalePrice tends to increase as well. This is an excellent predictor for a linear model.
+
+BedroomAbvGr vs. SalePrice: The box plot shows that, generally, houses with more bedrooms tend to have a higher median sale price. However, the relationship isn't as perfectly linear as with square footage, and there's a lot of overlap in prices between bedroom counts.
+
+Correlation Matrix:
+
+The heatmap visually confirms our findings. The number in each square represents the correlation coefficient, from -1 (perfect negative correlation) to +1 (perfect positive correlation).
+
+SalePrice has the strongest correlation with GrLivArea (around 0.71), which is a strong positive relationship.
+
+FullBath also has a decent positive correlation with SalePrice (around 0.56).
+
+BedroomAbvGr has a weaker positive correlation (around 0.17).
+
+Conclusion: The analysis shows that our chosen features, especially GrLivArea and the bathroom counts, have logical and measurable relationships with SalePrice. This confirms they are good candidates for building our predictive model.
